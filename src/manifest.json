@@ -1,6 +1,6 @@
 {
   "name": "Open In Editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Extends the Developer Tools, adding an ability to open resources in an editor.",
   "devtools_page": "devtools.html",
   "permissions": [
