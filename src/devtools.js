@@ -6,7 +6,7 @@ chrome.devtools.panels.setOpenResourceHandler(function (resource, line) {
   console.log('open %s', url);
 
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', url, true);
+  xhr.open('POST', url, true);
   xhr.onerror = function (e) { console.error(xhr.statusText); };
   xhr.send(null);
 });
