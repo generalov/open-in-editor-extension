@@ -55,5 +55,5 @@ gulp.task("github-release", () => {
 });
 
 gulp.task("dist", gulp.series("clean", gulp.parallel("zip", "crx")));
-gulp.task("default", gulp.series("dist"));
 gulp.task("release", gulp.series("dist", "github-release"));
+gulp.task("default", gulp.series("dist"));
