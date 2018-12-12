@@ -1,6 +1,6 @@
 {
   "name": "open-in-editor-extension",
-  "version": "1.0.3",
+  "version": "2.0.0",
   "description": "Open In Editor Web Extension",
   "scripts": {
     "icons": "gulp icons",

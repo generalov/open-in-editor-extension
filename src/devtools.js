@@ -28,7 +28,14 @@ async function getInspectedWindowUrl(callback) {
 }
 
 async function openInEditor(url, position) {
-  const openInEditorUrl = [url.split(/([?#])/)[0], position || 1].join(":");
+  const editor = '';
+  const at = position || 1
+
+  const oUrl = new URL(url);
+  oUrl.searchParams.append('edit', editor)
+  oUrl.searchParams.append('at', at)
+  const openInEditorUrl = oUrl.toString()
+
   const xhr = new XMLHttpRequest();
 
   console.log("open %s", openInEditorUrl);
